@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="images/logo.svg" />
+        <button
+          class="menu-toggle"
+          id="menu-toggle"
+          data-visible="true"
+        ></button>
+        <ul class="nav-menu" id="nav-menu" data-visible="true">
+          <li class="drop-down-container">
+            <a>Features</a>
+            <div class="drop-down">
+              <a href="#"><img src="images/icon-todo.svg" alt="" />Todo List</a>
+              <a href="#"
+                ><img src="images/icon-calendar.svg" alt="" />Calendar</a
+              >
+              <a href="#"
+                ><img src="images/icon-reminders.svg" alt="" />Reminders</a
+              >
+              <a href="#"
+                ><img src="images/icon-planning.svg" alt="" />Planning</a
+              >
+            </div>
+          </li>
+          <li class="drop-down-container">
+            <a>Company</a>
+            <div class="drop-down">
+              <a href="#">History</a>
+              <a href="#">Our Team</a>
+              <a href="#">Blog</a>
+            </div>
+          </li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+      <div class="header--btns">
+        <button class="no--border">Login</button>
+        <button class="register--button">Register</button>
+      </div>
+    </header>
+    <main>
+      <div class="hero--text">
+        <div>
+          <h1 class="accent">Make remote work</h1>
+          <p>
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <button class="bg--accent">Learn more</button>
+        </div>
+        <div class="client-list">
+          <img src="images/client-databiz.svg" />
+          <img src="images/client-audiophile.svg" />
+          <img src="images/client-meet.svg" />
+          <img src="images/client-maker.svg" />
+        </div>
+      </div>
+      <div>
+        <img src="images/image-hero-desktop.png" class="hero--desktop" />
+        <img src="images/image-hero-mobile.png" class="hero--mobile" />
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
